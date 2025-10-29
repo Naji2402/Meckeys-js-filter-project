@@ -125,14 +125,14 @@
 
 
 .side-navigation{
-    width: 0;
+    width: 93%;
     background-color: white;
     border-right: 2px solid black;
     height: 100%;
     position: absolute;
     left: 0;
     top: 0;
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 10px;
     transition:all .2s ease-in-out;
@@ -140,9 +140,12 @@
 }
 
 .open{
-    width: 93%;
+    /* width: 93%; */
+    display: flex;
     
 }
+
+
 
 .top-close{
     display: flex;
@@ -185,4 +188,119 @@
 .side-nav-list .side-nav-list-items svg{
     width: 9px;
     fill: black;
+}
+
+
+
+
+.page-path-details{
+    margin: 30px 0px 20px 0px;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.page-path-details div{
+    display: flex;
+    gap: 10px;
+}
+.page-path-details div span{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 12px;
+}
+
+.page-path-details div a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 12px;
+    color: rgb(51, 51, 51);
+    font-family: font4-Normal2;
+}
+.page-path-details p{
+     font-size: 14px;
+    font-weight: 400;
+    line-height: 12px;
+    color: rgb(51, 51, 51);
+    font-family: font4-Normal2;
+}
+.filter-option-btns{
+    padding: 10px 15px;
+    display: flex;
+    gap: 8px;
+}
+.filter-option-btns button{
+    background-color: white;
+    border: 1px solid black;
+    color: rgb(54, 54, 54);
+    border-radius: 6px;
+    padding: 7px 12px;
+    font-size: 13px;
+    font-family: font4-Normal2;
+    font-weight: 400;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.filter-option-btns button svg{
+    width: 18px;
+    height: 18px;
+}
+
+.size-btn, .connectivity-btn, .kswitches-btn{
+    display: none!important;
+}
+
+@media screen and (min-width: 450px) {
+    .size-btn, .connectivity-btn, .kswitches-btn{
+        display: flex!important;
+    }
+.filter-option-btns{
+    flex-wrap: wrap;
+}
+}
+
+@media screen and (min-width: 769px) {
+    .page-path-details{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.product-section{
+    margin-top: 50px;
+    padding:15px;
+}
+.products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.product-image img{
+    width: 100%;
+}
+.product-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.product-details h3{
+    padding-bottom: 8px;
+    font-family: font2-Bold;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    color: rgb(17, 17, 17);
+}
+.product-details div span{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+    font-family: font1-Normal;
+    color: rgb(102, 102, 102);
 }
