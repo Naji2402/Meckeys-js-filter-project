@@ -24,12 +24,13 @@ async function fetchProducts() {
                     <h3>${product.name}</h3>
                     <div></div>
                     <div>
-                        <span>${product.realPrice}</span>
-                        <span>${product.price}</span>
+                        <span>₹${product.realPrice}</span>
+                        <span>₹${product.price}</span>
                     </div>
                 </div>
             </div>`
     });
 }
+
 
 fetchProducts();
