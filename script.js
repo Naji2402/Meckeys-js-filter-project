@@ -1,13 +1,6 @@
-let hamburger = document.querySelector('#hamburger');
-let closeHam = document.querySelector('#close-button');
-let sideNav = document.querySelector('#sideNav');
+// product fetching section
+
 let productsContainer = document.querySelector('#productsContainer');
-hamburger.addEventListener('click', () => {
-    sideNav.classList.toggle("open")
-});
-closeHam.addEventListener('click', () => {
-    sideNav.classList.toggle("open")
-});
 
 async function fetchProducts() {
     let res = await fetch('products.json');
@@ -34,3 +27,40 @@ async function fetchProducts() {
 
 
 fetchProducts();
+
+// filter button open and close section
+
+let allFilterBtn = document.querySelector('#allFilterBtn');
+let allFilter = document.querySelector('.product-filter-section-main-button');
+let backButton = document.querySelector('.go-back');
+let brandBtn = document.querySelector('#brandBtn');
+let brandFilter = document.querySelector('.filter-section-button');
+let backButtonTwo = document.querySelector('.back-two');
+
+allFilterBtn.addEventListener('click', () => {
+    allFilter.classList.toggle("all-filter-open")
+});
+backButton.addEventListener('click', () => {
+    allFilter.classList.toggle("all-filter-open")
+});
+
+brandBtn.addEventListener('click', () => {
+    brandFilter.classList.toggle("all-filter-open")
+});
+
+backButtonTwo.addEventListener('click', () => {
+    brandFilter.classList.toggle("all-filter-open")
+});
+
+
+// sidebar open section
+
+let hamburger = document.querySelector('#hamburger');
+let closeHam = document.querySelector('#close-button');
+let sideNav = document.querySelector('#sideNav');
+hamburger.addEventListener('click', () => {
+    sideNav.classList.toggle("open")
+});
+closeHam.addEventListener('click', () => {
+    sideNav.classList.toggle("open")
+});

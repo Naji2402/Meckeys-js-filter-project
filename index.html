@@ -103,7 +103,86 @@
 
     <main class="product-section">
         <div class="product-filter-section">
-            <h1>Hello</h1>
+            <div class="product-filter-section-main">
+                <div class="price-filter">
+                    <h3>Price</h3>
+                    <div class="price-slider">
+                        <input type="range" min="0" max="50" class="slider">
+                        <input type="range" min="50" max="100" class="slider">
+                    </div>
+                </div>
+                <div class="filter-section">
+                    <h3>Brands</h3>
+                    <div class="filter-options">
+                        <div>
+                            <input type="checkbox" value="Arion">
+                            <span>Arion</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="Royal Kludge">
+                            <span>Royal Kludge</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="ATK">
+                            <span>ATK</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="ATTACK SHARK">
+                            <span>ATTACK SHARK</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="Ducky">
+                            <span>Ducky</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="Aula">
+                            <span>Aula</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="Hello Ganss">
+                            <span>Hello Ganss</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="Skyloong">
+                            <span>Skyloong</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="VGN">
+                            <span>VGN</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-section">
+                    <h3>Connectivity</h3>
+                    <div class="filter-options">
+                        <div>
+                            <input type="checkbox" value="Arion">
+                            <span>Wired</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="Royal Kludge">
+                            <span>Wireless</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-section">
+                    <h3>Stock status</h3>
+                    <div class="filter-options">
+                        <div>
+                            <input type="radio" name="stock" value="Any">
+                            <span>Any</span>
+                        </div>
+                        <div>
+                            <input type="radio" name="stock" value="In stock">
+                            <span>In stock</span>
+                        </div>
+                        <div>
+                            <input type="radio" name="stock" value="Out of stock">
+                            <span>Out of stock</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="product-section-container">
                         <div class="page-path-details">
@@ -119,11 +198,11 @@
 
                 <div class="filter-option-btns">
                     <button class="price-btn">Price</button>
-                    <button class="brands-btn">Brands</button>
+                    <button class="brands-btn" id="brandBtn">Brands</button>
                     <button class="size-btn">Size</button>
                     <button class="connectivity-btn">Connectivity</button>
                     <button class="kswitches-btn">Key Switches</button>
-                    <button class="all-filters-btn">All filters
+                    <button class="all-filters-btn" id="allFilterBtn">All filters
                         <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" viewBox="0 0 17 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12.5" cy="4.5" r="4.5" fill="#D9D9D9"></circle><path d="M1 4.5H16" stroke="#363636" stroke-width="1.5px" stroke-linecap="round" fill="none"></path><path d="M1 11.5H16" stroke="#363636" stroke-width="1.5px" stroke-linecap="round" fill="none"></path><path d="M1 18.5H16" stroke="#363636" stroke-width="1.5px" stroke-linecap="round" fill="none"></path><circle cx="12.5" cy="4.5" r="3" fill="#FFFFFF" stroke="#363636"></circle><circle cx="4.5" cy="11.5" r="3" fill="#FFFFFF" stroke="#363636"></circle><circle cx="9.5" cy="18.5" r="3" fill="#FFFFFF" stroke="#363636"></circle></svg>
                     </button>
                 </div>
@@ -132,6 +211,144 @@
                 </div>
         </div>
     </main>
+
+
+    <!-- all filter button open close -->
+
+
+    <div class="product-filter-section-main product-filter-section-main-button">
+        <div class="go-back">
+            <svg viewBox="0 0 16 16" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" xmlns="http://www.w3.org/2000/svg" width="16" height="16" aria-hidden="true"><g clip-path="url(#a)" stroke="#767676" stroke-width="1.5px" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M15 8H1M8 15 1 8l7-7" stroke="#767676" fill="none" stroke-width="1.5px"></path></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v16H0z"></path></clipPath></defs></svg>
+            <p>Filters</p>
+        </div>
+                <div class="price-filter">
+                    <h3>Price</h3>
+                    <div class="price-slider">
+                        <input type="range" min="0" max="50" class="slider">
+                        <input type="range" min="50" max="100" class="slider">
+                    </div>
+                </div>
+                <div class="filter-section">
+                    <h3>Brands</h3>
+                    <div class="filter-options">
+                        <div>
+                            <input type="checkbox" value="Arion">
+                            <span>Arion</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="Royal Kludge">
+                            <span>Royal Kludge</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="ATK">
+                            <span>ATK</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="ATTACK SHARK">
+                            <span>ATTACK SHARK</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="Ducky">
+                            <span>Ducky</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="Aula">
+                            <span>Aula</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="Hello Ganss">
+                            <span>Hello Ganss</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="Skyloong">
+                            <span>Skyloong</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="VGN">
+                            <span>VGN</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-section">
+                    <h3>Connectivity</h3>
+                    <div class="filter-options">
+                        <div>
+                            <input type="checkbox" value="Arion">
+                            <span>Wired</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="Royal Kludge">
+                            <span>Wireless</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-section">
+                    <h3>Stock status</h3>
+                    <div class="filter-options">
+                        <div>
+                            <input type="radio" name="stock" value="Any">
+                            <span>Any</span>
+                        </div>
+                        <div>
+                            <input type="radio" name="stock" value="In stock">
+                            <span>In stock</span>
+                        </div>
+                        <div>
+                            <input type="radio" name="stock" value="Out of stock">
+                            <span>Out of stock</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- brands filter button section -->
+
+            <div class="filter-section filter-section-button">
+                 <div class="go-back back-two">
+                        <svg viewBox="0 0 16 16" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" xmlns="http://www.w3.org/2000/svg" width="16" height="16" aria-hidden="true"><g clip-path="url(#a)" stroke="#767676" stroke-width="1.5px" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M15 8H1M8 15 1 8l7-7" stroke="#767676" fill="none" stroke-width="1.5px"></path></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v16H0z"></path></clipPath></defs></svg>
+                        <p>Brands</p>
+                  </div>
+                    <h3>Brands</h3>
+                    <div class="filter-options">
+                        <div>
+                            <input type="checkbox" value="Arion">
+                            <span>Arion</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="Royal Kludge">
+                            <span>Royal Kludge</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="ATK">
+                            <span>ATK</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="ATTACK SHARK">
+                            <span>ATTACK SHARK</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="Ducky">
+                            <span>Ducky</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="Aula">
+                            <span>Aula</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="Hello Ganss">
+                            <span>Hello Ganss</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="Skyloong">
+                            <span>Skyloong</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="VGN">
+                            <span>VGN</span>
+                        </div>
+                    </div>
+                </div>
 
 
     <footer class="footer">

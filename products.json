@@ -4,139 +4,159 @@
         "name":"Royal Kludge RK R65",
         "image":"images/image1.webp",
         "price":4399,
-        "realPrice":6500
+        "realPrice":6500,
+        "isWired": true
     },
     {   
         "id": 2,
         "name":"Royal Kludge RK R65",
         "image":"images/image2.webp",
         "price":4399,
-        "realPrice":6500
+        "realPrice":6500,
+        "isWired": false
     },
     {   
         "id": 3,
         "name":"Royal Kludge RK R65",
         "image":"images/image3.webp",
         "price":4399,
-        "realPrice":6500
+        "realPrice":6500,
+        "isWired": true
     },
     {   
         "id": 4,
         "name":"Royal Kludge RK R65",
         "image":"images/image4.webp",
         "price":4399,
-        "realPrice":6500
+        "realPrice":6500,
+        "isWired": false
     },
     {   
         "id": 5,
         "name":"Royal Kludge RK R65",
         "image":"images/image5.webp",
         "price":4399,
-        "realPrice":6500
+        "realPrice":6500,
+        "isWired": true
     },
     {   
         "id": 6,
         "name":"Royal Kludge RK R65",
         "image":"images/image6.webp",
         "price":4399,
-        "realPrice":6500
+        "realPrice":6500,
+        "isWired": false
     },
     {
         "id": 7,
         "name":"Keychron K6 Wireless Mechanical Keyboard",
         "image":"images/image1.webp",
         "price":6999,
-        "realPrice":8500
+        "realPrice":8500,
+        "isWired": true
     },
     {
         "id": 8,
         "name":"Logitech MX Mechanical Mini",
         "image":"images/image2.webp",
         "price":9999,
-        "realPrice":12499
+        "realPrice":12499,
+        "isWired": false
     },
     {
         "id": 9,
         "name":"Akko 3068B Plus RGB Wireless",
         "image":"images/image3.webp",
         "price":7999,
-        "realPrice":9500
+        "realPrice":9500,
+        "isWired": true
     },
     {
         "id": 10,
         "name":"Anne Pro 2 60% Wireless Keyboard",
         "image":"images/image4.webp",
         "price":8499,
-        "realPrice":10200
+        "realPrice":10200,
+        "isWired": false
     },
     {
         "id": 11,
         "name":"Ducky One 2 Mini RGB",
         "image":"images/image5.webp",
         "price":8999,
-        "realPrice":11000
+        "realPrice":11000,
+        "isWired": true
     },
     {
         "id": 12,
         "name":"SteelSeries Apex Pro TKL",
         "image":"images/image6.webp",
         "price":12999,
-        "realPrice":15999
+        "realPrice":15999,
+        "isWired": false
     },
     {
         "id": 13,
         "name":"Razer BlackWidow V4 Pro",
         "image":"images/image1.webp",
         "price":14999,
-        "realPrice":18999
+        "realPrice":18999,
+        "isWired": true
     },
     {
         "id": 14,
         "name":"Corsair K70 RGB TKL",
         "image":"images/image2.webp",
         "price":11999,
-        "realPrice":14999
+        "realPrice":14999,
+        "isWired": false
     },
     {
         "id": 15,
         "name":"Epomaker TH80 Pro",
         "image":"images/image3.webp",
         "price":7499,
-        "realPrice":9200
+        "realPrice":9200,
+        "isWired": true
     },
     {
         "id": 16,
         "name":"Keychron K8 Pro",
         "image":"images/image4.webp",
         "price":8999,
-        "realPrice":10999
+        "realPrice":10999,
+        "isWired": false
     },
     {
         "id": 17,
         "name":"NuPhy Air75 Low Profile Keyboard",
         "image":"images/image5.webp",
         "price":8999,
-        "realPrice":11499
+        "realPrice":11499,
+        "isWired": true
     },
     {
         "id": 18,
         "name":"Logitech G Pro X TKL Lightspeed",
         "image":"images/image6.webp",
         "price":13999,
-        "realPrice":16999
+        "realPrice":16999,
+        "isWired": false
     },
     {
         "id": 19,
         "name":"Royal Kludge RK84",
         "image":"images/image1.webp",
         "price":5499,
-        "realPrice":7500
+        "realPrice":7500,
+        "isWired": true
     },
     {
         "id": 20,
         "name":"Keydous NJ80-AP Wireless",
         "image":"images/image2.webp",
         "price":9599,
-        "realPrice":11999
+        "realPrice":11999,
+        "isWired": false
     }
 ]
