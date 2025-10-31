@@ -106,10 +106,23 @@
             <div class="product-filter-section-main">
                 <div class="price-filter">
                     <h3>Price</h3>
-                    <div class="price-slider">
-                        <input type="range" min="0" max="50" class="slider">
-                        <input type="range" min="50" max="100" class="slider">
+                   <div class="range-slider">
+                        <div class="range-fill"></div>
+                        <input type="range" class="min-price" value="0" min="0" max="4000" step="10">
+                        <input type="range" class="max-price" value="4000" min="0" max="4000" step="10">
                     </div>
+
+                    <div class="price-content">
+                        <div>
+                            <p id="min-value">min.</p>
+                        </div>
+
+                        <div>
+                            <p id="max-value">max</p>
+                        </div>
+                    </div>
+
+                    
                 </div>
                 <div class="filter-section">
                     <h3>Brands</h3>
@@ -223,9 +236,20 @@
         </div>
                 <div class="price-filter">
                     <h3>Price</h3>
-                    <div class="price-slider">
-                        <input type="range" min="0" max="50" class="slider">
-                        <input type="range" min="50" max="100" class="slider">
+                    <div class="range-slider">
+                        <div class="range-fill"></div>
+                        <input type="range" class="min-price" value="0" min="0" max="4000" step="10">
+                        <input type="range" class="max-price" value="4000" min="0" max="4000" step="10">
+                    </div>
+
+                    <div class="price-content">
+                        <div>
+                            <p id="min-value">min.</p>
+                        </div>
+
+                        <div>
+                            <p id="max-value">max</p>
+                        </div>
                     </div>
                 </div>
                 <div class="filter-section">
