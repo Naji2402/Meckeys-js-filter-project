@@ -473,6 +473,7 @@
 .product-filter-section{
     min-width: 325px;
     margin-top: 30px;
+    /* overflow-y: scroll; */
 }
 .product-filter-section-main{
     width: 100%;
@@ -619,8 +620,10 @@ input[type="range"]::-webkit-slider-thumb{
 
 
 
+
 @media screen and (min-width:959px) {
     .go-back{
         display: none;
     }
 }
+
