@@ -27,7 +27,7 @@
     "image": "images/image3.webp",
     "price": 4399,
     "realPrice": 6500,
-    "isWired": true,
+    "isWired": false,
     "isAvailable":false
   },
   {
@@ -35,9 +35,9 @@
     "name": "Aula F75 MAX",
     "brandName": "Aula",
     "image": "images/image4.webp",
-    "price": 4399,
+    "price": 1800,
     "realPrice": 6500,
-    "isWired": false,
+    "isWired": true,
     "isAvailable":true
   },
   {
@@ -45,7 +45,7 @@
     "name": "Royal Kludge RK M75",
     "brandName": "Royal Kludge",
     "image": "images/image5.webp",
-    "price": 4399,
+    "price": 5300,
     "realPrice": 6500,
     "isWired": true,
     "isAvailable":false
@@ -55,7 +55,7 @@
     "name": "EPOMAKER X GALAXY 100",
     "brandName": "EPOMAKER",
     "image": "images/image6.webp",
-    "price": 4399,
+    "price": 4100,
     "realPrice": 6500,
     "isWired": false,
     "isAvailable":true
@@ -65,7 +65,7 @@
     "name": "Royal Kludge RK R76",
     "brandName": "Royal Kludge",
     "image": "images/image1.webp",
-    "price": 4399,
+    "price": 3200,
     "realPrice": 6500,
     "isWired": true,
     "isAvailable":true
@@ -88,7 +88,7 @@
     "image": "images/image3.webp",
     "price": 4399,
     "realPrice": 6500,
-    "isWired": true,
+    "isWired": false,
     "isAvailable":false
   },
   {
@@ -96,9 +96,9 @@
     "name": "Aula F75 MAX",
     "brandName": "Aula",
     "image": "images/image4.webp",
-    "price": 4399,
+    "price": 4400,
     "realPrice": 6500,
-    "isWired": false,
+    "isWired": true,
     "isAvailable":true
   },
   {
@@ -106,7 +106,7 @@
     "name": "Royal Kludge RK M75",
     "brandName": "Royal Kludge",
     "image": "images/image5.webp",
-    "price": 4399,
+    "price": 5000,
     "realPrice": 6500,
     "isWired": true,
     "isAvailable":false
@@ -116,7 +116,7 @@
     "name": "EPOMAKER X GALAXY 100",
     "brandName": "EPOMAKER",
     "image": "images/image6.webp",
-    "price": 4399,
+    "price": 2500,
     "realPrice": 6500,
     "isWired": false,
     "isAvailable":true
