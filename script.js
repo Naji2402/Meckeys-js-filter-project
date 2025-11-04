@@ -83,6 +83,7 @@ async function fetchProducts() {
         let data = await res.json();
         connectivityFiltering(data);
         priceSliderFilter(data);
+        isAvailableCheck(data)
         data.forEach((product) => {
             productsContainer.innerHTML += `<div class="products">
             <div class="product-image">
@@ -127,24 +128,8 @@ function brandFiltering() {
             })
             connectivityFiltering(allNewArr);
             priceSliderFilter(allNewArr);
-            productsContainer.innerHTML = '';
-            allNewArr.forEach((newProduct) => {
-                productsContainer.innerHTML += `<div class="products">                                    <div class="product-image">
-                                    <img src=${newProduct.image} alt="">
-                                    <div class="fav-product-icon">
-                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 512 512"><path xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>
-                                    </div>
-                                    </div>
-                                    <div class="product-details">
-                                    <h3>${newProduct.name}</h3>
-                                    <div></div>
-                                    <div>
-                                    <span>₹${newProduct.realPrice}</span>
-                                     <span>₹${newProduct.price}</span>
-                                     </div>
-                                     </div>
-                                    </div>` 
-            });
+            isAvailableCheck(allNewArr);
+            lastOutPrinting(allNewArr)
         }
 
 
@@ -182,47 +167,13 @@ function connectivityFiltering(allNewArr) {
                     let wired = allNewArr.filter((product) => {
                         return product.isWired === true;
                     });
-                    productsContainer.innerHTML = '';
-                     wired.forEach((newProduct) => {
-                    productsContainer.innerHTML += `<div class="products">                                    <div class="product-image">
-                                    <img src=${newProduct.image} alt="">
-                                    <div class="fav-product-icon">
-                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 512 512"><path xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>
-                                    </div>
-                                    </div>
-                                    <div class="product-details">
-                                    <h3>${newProduct.name}</h3>
-                                    <div></div>
-                                    <div>
-                                    <span>₹${newProduct.realPrice}</span>
-                                     <span>₹${newProduct.price}</span>
-                                     </div>
-                                     </div>
-                                    </div>` 
-            });
+                    lastOutPrinting(wired)
 
                 }else{
                     let wired = allNewArr.filter((product) => {
                         return product.isWired === false;
                     });
-                    productsContainer.innerHTML = '';
-                     wired.forEach((newProduct) => {
-                    productsContainer.innerHTML += `<div class="products">                                    <div class="product-image">
-                                    <img src=${newProduct.image} alt="">
-                                    <div class="fav-product-icon">
-                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 512 512"><path xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>
-                                    </div>
-                                    </div>
-                                    <div class="product-details">
-                                    <h3>${newProduct.name}</h3>
-                                    <div></div>
-                                    <div>
-                                    <span>₹${newProduct.realPrice}</span>
-                                     <span>₹${newProduct.price}</span>
-                                     </div>
-                                     </div>
-                                    </div>` 
-            });
+                    lastOutPrinting(wired)
                 }
         } 
         
@@ -249,17 +200,58 @@ let sliders = document.querySelectorAll('.slider');
 
 function priceSliderFilter(productArr) {
     sliders.forEach((slider) => {
-    slider.addEventListener('change', () => {
-        let minPriceValue = minPrice.value;
-        let maxPriceValue = maxPrice.value;
-        let newPriceArr = productArr.filter((product) => {
-            if(product.price >= minPriceValue && product.price <= maxPriceValue){
-                return product
+        slider.addEventListener('change', () => {
+            let minPriceValue = minPrice.value;
+            let maxPriceValue = maxPrice.value;
+            let newPriceArr = productArr.filter((product) => {
+                if(product.price >= minPriceValue && product.price <= maxPriceValue){
+                    return product
+                }
+            })
+            isAvailableCheck(newPriceArr)
+            lastOutPrinting(newPriceArr)
+            connectivityFiltering(newPriceArr);
+        
+    });
+});    
+}
+
+function isAvailableCheck(products) {
+    let newAvailableFiltered; 
+    let isStockAvailable = document.querySelectorAll('.stock-button');
+    isStockAvailable.forEach((stock) => {
+    stock.addEventListener('click', () => {
+        if (stock.checked) {
+          
+            let checkedValue = stock.value;
+            
+            if (checkedValue === 'in stock') {
+                newAvailableFiltered = products.filter((product) => {
+                    return product.isAvailable
+                })
+            }else if( checkedValue === 'out of stock') {
+                newAvailableFiltered = products.filter((product) => {
+                    return !product.isAvailable
+                })
+            }else {
+                newAvailableFiltered = products.filter((product) => {
+                    return product
+                })
             }
-        })
-        productsContainer.innerHTML = ''
-        newPriceArr.forEach((newProduct) => {
-             productsContainer.innerHTML += `<div class="products">                                    <div class="product-image">
+            lastOutPrinting(newAvailableFiltered)
+            
+        }
+    });
+});
+
+}
+
+
+
+function lastOutPrinting(lastProductList) {
+    productsContainer.innerHTML = ''
+            lastProductList.forEach((newProduct) => {
+            productsContainer.innerHTML += `<div class="products">                                    <div class="product-image">
                                     <img src=${newProduct.image} alt="">
                                     <div class="fav-product-icon">
                                     <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 512 512"><path xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>
@@ -275,8 +267,4 @@ function priceSliderFilter(productArr) {
                                      </div>
                                     </div>` 
         });
-        
-    });
-});    
 }
-
