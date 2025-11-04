@@ -116,6 +116,8 @@ fetchProducts();
 
 function brandFiltering() {
 
+    
+
       async function getBrandFiltered() {
             let response = await fetch("products.json");
             let data = await response.json();
@@ -162,6 +164,9 @@ brandCheckBox.forEach((checkBox) => {
 })
 
 }
+
+
+
 
 
 
@@ -237,6 +242,10 @@ brandFiltering();
 let minPrice = document.querySelector('.min-price');
 let maxPrice = document.querySelector('.max-price');
 let sliders = document.querySelectorAll('.slider');
+
+
+
+
 
 function priceSliderFilter(productArr) {
     sliders.forEach((slider) => {
