@@ -120,6 +120,128 @@
     "realPrice": 6500,
     "isWired": false,
     "isAvailable":true
+  },
+  {
+    "id": 3,
+    "name": "Royal Kludge RK R76",
+    "brandName": "Royal Kludge",
+    "image": "images/image1.webp",
+    "price": 2399,
+    "realPrice": 6500,
+    "isWired": true,
+    "isAvailable":true
+  },
+  {
+    "id": 14,
+    "name": "EPOMAKER x AULA F75 MAX",
+    "brandName": "EPOMAKER",
+    "image": "images/image2.webp",
+    "price": 6300,
+    "realPrice": 6500,
+    "isWired": false,
+    "isAvailable":true
+
+  },
+  {
+    "id": 15,
+    "name": "Royal Kludge R75-WIRELESS",
+    "brandName": "Royal Kludge",
+    "image": "images/image3.webp",
+    "price": 5200,
+    "realPrice": 6500,
+    "isWired": false,
+    "isAvailable":false
+  },
+  {
+    "id": 16,
+    "name": "Aula F75 MAX",
+    "brandName": "Aula",
+    "image": "images/image4.webp",
+    "price": 6199,
+    "realPrice": 6500,
+    "isWired": true,
+    "isAvailable":true
+  },
+  {
+    "id": 17,
+    "name": "Royal Kludge RK M75",
+    "brandName": "Royal Kludge",
+    "image": "images/image5.webp",
+    "price": 4299,
+    "realPrice": 6500,
+    "isWired": true,
+    "isAvailable":false
+  },
+  {
+    "id": 18,
+    "name": "EPOMAKER X GALAXY 100",
+    "brandName": "EPOMAKER",
+    "image": "images/image6.webp",
+    "price": 3299,
+    "realPrice": 6500,
+    "isWired": false,
+    "isAvailable":true
+  },
+  {
+    "id": 19,
+    "name": "Royal Kludge RK R76",
+    "brandName": "Royal Kludge",
+    "image": "images/image1.webp",
+    "price":2500,
+    "realPrice": 6500,
+    "isWired": true,
+    "isAvailable":true
+  },
+  {
+    "id": 20,
+    "name": "EPOMAKER x AULA F75 MAX",
+    "brandName": "EPOMAKER",
+    "image": "images/image2.webp",
+    "price": 6500,
+    "realPrice": 6500,
+    "isWired": false,
+    "isAvailable":true
+
+  },
+  {
+    "id": 21,
+    "name": "Royal Kludge R75-WIRELESS",
+    "brandName": "Royal Kludge",
+    "image": "images/image3.webp",
+    "price": 4899,
+    "realPrice": 6500,
+    "isWired": false,
+    "isAvailable":false
+  },
+  {
+    "id": 22,
+    "name": "Aula F75 MAX",
+    "brandName": "Aula",
+    "image": "images/image4.webp",
+    "price": 4499,
+    "realPrice": 6500,
+    "isWired": true,
+    "isAvailable":true
+  },
+  {
+    "id": 23,
+    "name": "Royal Kludge RK M75",
+    "brandName": "Royal Kludge",
+    "image": "images/image5.webp",
+    "price": 3299,
+    "realPrice": 6500,
+    "isWired": true,
+    "isAvailable":false
+  },
+  {
+    "id": 24,
+    "name": "EPOMAKER X GALAXY 100",
+    "brandName": "EPOMAKER",
+    "image": "images/image6.webp",
+    "price": 1899,
+    "realPrice": 6500,
+    "isWired": false,
+    "isAvailable":true
   }
 ]
 
